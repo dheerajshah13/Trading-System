@@ -7,7 +7,7 @@ import yfinance as yf
 import tensorflow as tf
 
 def commodity_pred():
-    st.title("Global Commodity Price Prediction")
+    st.title("Global Commodity Price Prediction(USD)")
     st.header('Here you can select the currency you want to predict')
 
     choose_stock = st.selectbox('Choose the Commodity', ['NONE', 'Gold','Silver','Platinum',"Copper",'Crude Oil'])
