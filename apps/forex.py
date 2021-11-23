@@ -30,7 +30,7 @@ def forex_pred():
         X_test.append(last_30_days_scaled)
         X_test = np.array(X_test)
         X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
-        model = load_model('/Users/dheeraj/PycharmProjects/CSFC/Models/Forex/USD-INR.h5')
+        model = load_model('Models/Forex/USD-INR.h5')
         pred_price = model.predict(X_test)
         pred_price = scaler.inverse_transform(pred_price)
 
@@ -67,7 +67,7 @@ def forex_pred():
         X_test.append(last_30_days_scaled)
         X_test = np.array(X_test)
         X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
-        model = load_model('/Users/dheeraj/PycharmProjects/CSFC/Models/Forex/EUR-INR.h5')
+        model = load_model('Models/Forex/EUR-INR.h5')
         pred_price = model.predict(X_test)
         pred_price = scaler.inverse_transform(pred_price)
 
@@ -104,7 +104,7 @@ def forex_pred():
         X_test.append(last_30_days_scaled)
         X_test = np.array(X_test)
         X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
-        model = load_model('/Users/dheeraj/PycharmProjects/CSFC/Models/Forex/CAD-INR.h5')
+        model = load_model('Models/Forex/CAD-INR.h5')
         pred_price = model.predict(X_test)
         pred_price = scaler.inverse_transform(pred_price)
 
