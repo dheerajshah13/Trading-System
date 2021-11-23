@@ -9,16 +9,6 @@ from helper import *
 #st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mpnvva.in%2FHome%2FUProfile%3FinstituteID%3D18&psig=AOvVaw1bvMjVTXeTOq9_BIKesNlt&ust=1637740837940000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMiIwJmCrvQCFQAAAAAdAAAAABAD")
 app = MultiApp()
 
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
-
-
 
 st.set_page_config(
     page_title="Trading System",
