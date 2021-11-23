@@ -68,7 +68,7 @@ def crypto_pred():
         X_test.append(last_30_days_scaled)
         X_test = np.array(X_test)
         X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
-        model = load_model('/Users/dheeraj/PycharmProjects/CSFC/Models/Crypto/ETH.h5')
+        model = load_model('Models/Crypto/ETH.h5')
         pred_price = model.predict(X_test)
         pred_price = scaler.inverse_transform(pred_price)
 
@@ -106,7 +106,7 @@ def crypto_pred():
         X_test.append(last_30_days_scaled)
         X_test = np.array(X_test)
         X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
-        model = load_model('/Users/dheeraj/PycharmProjects/CSFC/Models/Crypto/DOGE.h5')
+        model = load_model('Models/Crypto/DOGE.h5')
         pred_price = model.predict(X_test)
         pred_price = scaler.inverse_transform(pred_price)
 
@@ -144,7 +144,7 @@ def crypto_pred():
         X_test.append(last_30_days_scaled)
         X_test = np.array(X_test)
         X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
-        model = load_model('/Users/dheeraj/PycharmProjects/CSFC/Models/Crypto/ADA.h5')
+        model = load_model('Models/Crypto/ADA.h5')
         pred_price = model.predict(X_test)
         pred_price = scaler.inverse_transform(pred_price)
 
@@ -182,7 +182,7 @@ def crypto_pred():
         X_test.append(last_30_days_scaled)
         X_test = np.array(X_test)
         X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
-        model = load_model('/Users/dheeraj/PycharmProjects/CSFC/Models/Crypto/DOT.h5')
+        model = load_model('Models/Crypto/DOT.h5')
         pred_price = model.predict(X_test)
         pred_price = scaler.inverse_transform(pred_price)
 
@@ -220,7 +220,7 @@ def crypto_pred():
         X_test.append(last_30_days_scaled)
         X_test = np.array(X_test)
         X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
-        model = load_model('/Users/dheeraj/PycharmProjects/CSFC/Models/Crypto/LTC.h5')
+        model = load_model('Models/Crypto/LTC.h5')
         pred_price = model.predict(X_test)
         pred_price = scaler.inverse_transform(pred_price)
 
@@ -258,7 +258,7 @@ def crypto_pred():
         X_test.append(last_30_days_scaled)
         X_test = np.array(X_test)
         X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
-        model = load_model('/Users/dheeraj/PycharmProjects/CSFC/Models/Crypto/XLM.h5')
+        model = load_model('Models/Crypto/XLM.h5')
         pred_price = model.predict(X_test)
         pred_price = scaler.inverse_transform(pred_price)
 
