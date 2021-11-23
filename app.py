@@ -14,7 +14,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded")
 
-set_png_as_page_bg('/Users/dheeraj/PycharmProjects/CSFC/bg/5591276.png')
+#set_png_as_page_bg('/Users/dheeraj/PycharmProjects/CSFC/bg/5591276.png')
 
 display_app_header(main_txt='Forecasting Price of CSFC',
                    sub_txt='Clean, describe, visualise and Predict using AI models')
