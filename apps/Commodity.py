@@ -29,7 +29,7 @@ def commodity_pred():
         X_test.append(last_30_days_scaled)
         X_test = np.array(X_test)
         X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
-        model = load_model('/Users/dheeraj/PycharmProjects/CSFC/Models/Commodity/gold.h5')
+        model = load_model('Models/Commodity/gold.h5')
         pred_price = model.predict(X_test)
         pred_price = scaler.inverse_transform(pred_price)
 
@@ -67,7 +67,7 @@ def commodity_pred():
         X_test.append(last_30_days_scaled)
         X_test = np.array(X_test)
         X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
-        model = load_model('/Users/dheeraj/PycharmProjects/CSFC/Models/Commodity/Silver.h5')
+        model = load_model('Models/Commodity/Silver.h5')
         pred_price = model.predict(X_test)
         pred_price = scaler.inverse_transform(pred_price)
 
@@ -105,7 +105,7 @@ def commodity_pred():
         X_test.append(last_30_days_scaled)
         X_test = np.array(X_test)
         X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
-        model = load_model('/Users/dheeraj/PycharmProjects/CSFC/Models/Commodity/Platinum.h5')
+        model = load_model('Models/Commodity/Platinum.h5')
         pred_price = model.predict(X_test)
         pred_price = scaler.inverse_transform(pred_price)
 
@@ -143,7 +143,7 @@ def commodity_pred():
         X_test.append(last_30_days_scaled)
         X_test = np.array(X_test)
         X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
-        model = load_model('/Users/dheeraj/PycharmProjects/CSFC/Models/Commodity/Copper.h5')
+        model = load_model('Models/Commodity/Copper.h5')
         pred_price = model.predict(X_test)
         pred_price = scaler.inverse_transform(pred_price)
 
@@ -181,7 +181,7 @@ def commodity_pred():
         X_test.append(last_30_days_scaled)
         X_test = np.array(X_test)
         X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
-        model = load_model('/Users/dheeraj/PycharmProjects/CSFC/Models/Commodity/Crude_oil.h5')
+        model = load_model('Models/Commodity/Crude_oil.h5')
         pred_price = model.predict(X_test)
         pred_price = scaler.inverse_transform(pred_price)
 
